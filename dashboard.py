@@ -50,3 +50,15 @@ st.bar_chart(
     x="week",
     y="Remote",
 )
+
+# Additional visualizations and figures.
+st.write("### Map Visualization")
+st.image("/workspaces/streamlit-dashboard-enhanced/map.png", caption="Sample Map", use_column_width=True)
+
+st.write("This map represents example data for demonstration purposes.")
+
+
+# Adding Interactive components like widgets (e.g., sliders, buttons, checkboxes).
+st.sidebar.write("### Select a Number")
+number = st.sidebar.slider("Choose a number", 1, 100, 50)
+st.write(f"You selected: {number}")
